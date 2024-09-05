@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vishal Mangane Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.about-img img{
+	border: 2px dashed black ;
+	border-radius: 40%;
+	width: 75%;
+	margin-left: 10%;
+}
+
+
+
+.social-icons {
+  display: flex;
+  gap: 60px;
+  margin-left: 10px;
+}
+
+.icon-link {
+  position: relative;
+  display: inline-block;
+  text-align: cnter;
+  text-decoration: none; 
+  color: inherit;
+  &::before{
+	content: none;
+  }
+}
+
+.social-icon {
+  width: 40px;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.icon-text {
+  font-family: "Raleway", sans-serif !important;
+  display: block;
+  opacity: 0;  
+  font-size: 15px;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  transition: opacity 0.5s ease-in;
+}
+
+/* On hover, hide the icon and show the text */
+.icon-link:hover .social-icon {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.icon-link:hover .icon-text {
+	opacity: 1;
+	transition: opacity 0.5s ease-out;
+}
+
+
+
+
+.skill-mf {
+  font-family: Arial, sans-serif;
+}
+
+.skill-mf .title-s {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover{
+		color: #2ecc71;
+	}
+}
+
+.skill-item i{
+	width: 20px;
+	height: auto;
+	color: #3498db;
+	cursor: pointer;
+	&:hover{
+		color: #2ecc71;
+	} 
+}
+
+
+
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Vishal Mangane</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third order-md-last img" style="background-image:url(images/Vishal_photo.png); height: 90%;">
+						<div class="overlay"></div>
+				</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Vishal Mangane</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Full-stack developer  '
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 100); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <!-- <h2>A SDE-intern</h2> -->
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://drive.google.com/file/d/1mZWDZNh-CAlBdME30L7iBtYVCVUaizxg/view?usp=drive_link" target="_blank" class="btn btn-primary py-3 px-15">View Resume</a> 
+							<a href="https://github.com/VishalMangane" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img" >
+										<img src="images/My photo.jpg" class="img-fluid b-shadow-a" alt="Vishal Mangane photo">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-6">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Vishal Mangane</span></p>
+										<p><span class="title-s">Experience: </span> <span>6 Months as an intern in Flipkart</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div style="margin: 15px;" class="skill-mf">
+									<p class="title-s">Skills</p>
+
+									<div class="skill-item">
+										<i class="fas fa-code"></i>
+										<span>&nbsp;C</span>
+									</div>
+
+									<div class="skill-item">
+										<i class="fas fa-code"></i>
+										<span>&nbsp;C++</span>
+									</div>
+								
+									<div class="skill-item">
+										<i class="fab fa-python Python"></i>
+										<span>Python</span>
+									</div>
+								
+									<div class="skill-item">
+										<i class="fab fa-java"></i>
+										<span>Java</span>
+									</div>
+								
+									<div class="skill-item">
+										<i class="fas fa-database"></i>
+										<span>MySQL</span>
+									</div>
+									<div class="skill-item">
+										<i class="fas fa-database"></i>
+										<span>MongoDB</span>
+									</div>
+									<div class="skill-item">
+										<i class="fab fa-html5"></i>
+										<span>HTML</span>
+									</div>
+								
+									<div class="skill-item">
+										<i class="fab fa-css3-alt"></i>
+										<span>CSS</span>
+									</div>
+								
+									<div class="skill-item">
+										<i class="fab fa-js"></i>
+										<span>JavaScript</span>
+									</div>
+								
+									<div class="skill-item">
+										<i class="fab fa-node-js"></i>
+										<span>Node.js</span>
+									</div>
+								
+									<div class="skill-item">
+										<i class="fab fa-react"></i>
+										<span>React.js</span>
+									</div>
+								
+									<div class="skill-item">
+										<i class="fas fa-leaf"></i>
+										<span>Spring Boot</span>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Aspiring software developer with a solid foundation in programming, algorithm design, and problem-solving.
+									Seeking a challenging position in a dynamic and innovative tech company where I can leverage my skills in
+									software development to contribute to impactful projects. Eager to collaborate with a talented team to
+									develop cutting-edge solutions and continuously improve my technical expertise.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology, ECE</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi,Kannada,Marathi</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Playing Cricket , Listening Music & Plying games</span></li>
+									<li class="d-flex"><span>Other skills:</span> <span>Git , DSA , Problem solving </span></li>
+									
+								</ul>
+							</div>
+						</div>
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="social-icons">
+								<a href="https://www.linkedin.com/in/vishal-mangane/" target="_blank" class="icon-link">
+								  <img src="./images/linkedin.png" class="social-icon" alt="">
+								  <span class="icon-text">LinkedIn</span>
+								</a>
+								<a href="https://www.facebook.com/vishal.mangane" target="_blank" class="icon-link">
+								  <img src="./images/facebook.png" class="social-icon" alt="">
+								  <span class="icon-text">Facebook</span>
+								</a>
+								<a href="https://www.instagram.com/vishal_mangane/" target="_blank" class="icon-link">
+								  <img src="./images/instagram.png" class="social-icon" alt="">
+								  <span class="icon-text">Instagram</span>
+								</a>
+								<a href="https://github.com/VishalMangane" target="_blank" class="icon-link">
+								  <img src="./images/github.png" class="social-icon" alt="">
+								  <span class="icon-text">GitHub</span>
+								</a>
+							  </div>
+							  
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Results-driven Backend Developer with experience in working on massive and OKR projects during 
+				<span style="font-weight: bold;">Internship</span> as an Intern in Cleartrip[Flipkart-group] . 
+				Proven ability to collaborate with teams and deliver good work.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		<!-- display: flex; justify-content: center; -->
+		<div class="row" >
+			<div class="col-md-8">
+				<div class= "resume-wrap ftco-animate align-items-center">
+					<span class="date">Feb 2024-July 2024</span>
+					<h2>SDE - intern</h2>
+					<span class="position">Flipkart - Cleartrip <img style="width: 30px;" src="./images/Flipkart.jpeg" alt=""></span>
+					<p class="mt-4">Cleartrip is a flipkart company, which is a booking platform for air(flights), hotel and buses.
+						<ul>
+							<span style="font-weight: bold;">Hotel Booking Reconfirmation flow :</span>
+								<li>
+									Built a reconfirmation flow only for directly contracted hotels using Java, Spring boot.
+								</li> 
+								<li>
+									This leverages the Salesforce system in order to connect the Cleartrip Agents with the hoteliers using REST APIs.
+								</li>
+							<span style="font-weight: bold;">Worked with Product manager on Ratings and Reviews:</span>
+								<li>
+									Making a excel sheet report of an  of required data of ratings and reviews(RNR) for city wise.
+								</li>
+							<span style="font-weight: bold;">API testing using Karate Framework :</span>
+								<li>
+									Testing to check API status and responses using karate framework
+								</li>
+								<li>
+									Generates detailed HTML reports with passed/failed scenarios, response details, and error messages
+								</li>
+							<li>
+								<span style="font-weight: bold;">Shadow testing</span> - testing of API responses of old flow and new flow.
+							</li>
+						</ul>
+					</p>
+				</div>
+
+			</div>
+
+			<div class="row justify-content-center align-items-center">
+    			<div class="col-md-6 text-center ftco-animate ">
+    				<a href="https://drive.google.com/file/d/1mZWDZNh-CAlBdME30L7iBtYVCVUaizxg/view?usp=drive_link" target="_blank" download="vishal_Resume.pdf" class="btn btn-primary py-4 px-5">Download Resume</a>
+    			</div>
+    		</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row align-items-center justify-content-center">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2024</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">University Visvesvarya College of Engineering</span>
+    					<p class="mt-2">CGPA : 8.5</p>
+    					<p class="mt-1">Bangalore, Karnataka</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020</span>
+    					<h2>XII th (PU)</h2>
+    					<span class="position">Diamond Independent PU college Bhalki</span>
+    					<p class="mt-2">Percentage : 92.5</p>
+    					<p class="mt-2">Bidar, Karnataka</p>
+    				</div>
+				</div>
+    		</div>
+    		
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the some projects on the Web development using React.js , Java , Spring boot and MongoDB</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center ">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/VishalMangane/FoodOrderingWebsite" class="block-20 zoom-effect" style="background-image: url('images/foodOrderImage.webp');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/VishalMangane/FoodOrderingWebsite">Bitemeals - Food Ordering Website</a></h3>
+                <p>Developed a responsive food order website using React, Spring boot, allowing users to browse menu, select items and place orders online along with authentication .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/VishalMangane/Car-billing-App" class="block-20 zoom-effect" style="background-image: url('images/invoiceImage.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/VishalMangane/Car-billing-App">Invoice Generator - Car Billing App</a></h3>
+                <p>The car billing app made by using React.js which will generates the invoice at the end after the dealers form filled out. </p>
+              </div>
+            </div>
+          </div>
+          
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <!-- <strong class="number" data-number="20">0</strong> -->
+                <strong>Achievements</strong>
+				<span>Participated in Rural IT Quiz competition in 2018 at state level.</span>
+				<span>Participated and Runner up in Cleartrip premier league.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <!-- <strong class="number" data-number="30">0</strong> -->
+                <strong>INTERESTS</strong>
+				<span>Playing cricket and kabbadi,</span>
+				<span>Listening Musics.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve DSA problems &amp; used to work on web projects </h4>
+						<br>
+						<p><a href="https://github.com/VishalMangane?tab=repositories" target="_blank" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bengaluru, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://7975380931">+91 79753 80931</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:vishalkmangane2002@gmail.com">vishalkmangane2002@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">view Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1mZWDZNh-CAlBdME30L7iBtYVCVUaizxg/view?usp=drive_link" target="_blank">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/S3P9rsRfB4ZzK3ZL7" target="_blank" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/vishal-mangane/"><span class="icon-linkedin"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/vishal.mangane"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/vishal_mangane/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> Vishal-Mangane-Portfolio | All rights reserved
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
