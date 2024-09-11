@@ -8157,7 +8157,9 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #999999; }
+  color: #999999; 
+  margin: 10px;  
+}
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8794,7 +8796,7 @@ h1, h2, h3, h4, h5,
 .ftco-about ul.about-info {
   display: inline-block;
   padding: 0;
-  margin: 0;
+  margin: 10px;
   width: 100%; }
   .ftco-about ul.about-info li {
     list-style: none;
