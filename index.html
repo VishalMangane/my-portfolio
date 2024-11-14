@@ -196,6 +196,27 @@
 	height:auto ; 
 }
 
+.experience-header-btn{
+	display: flex;
+	align-items: center;
+}
+
+.experience-certificate-btn{
+	margin-bottom: 8px;
+}
+
+.experience-certificate-btn .download-btn{	
+	border-radius: 10px;
+	height: 20px;
+	width: auto;
+	margin-left: 20px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.experience-certificate-btn .download-btn:hover {
+	transform: scale(1.2);
+}
+
 </style>
 
 
@@ -278,8 +299,8 @@
 
 						<br>
 						<br>
-			            <p><a href="https://drive.google.com/file/d/1DPI4z4cJi0ZpWVGS25rqDdyySdLyVrNJ/view?usp=drive_link" target="_blank" class="btn btn-primary py-3 px-15">View Resume</a> 
-							<a href="https://github.com/VishalMangane" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="https://drive.google.com/file/d/1DPI4z4cJi0ZpWVGS25rqDdyySdLyVrNJ/view?usp=drive_link" target="_blank" class="btn btn-primary py-3 px-15" title="drive link for resume">View Resume</a> 
+							<a href="https://github.com/VishalMangane" target="_blank" class="btn btn-white btn-outline-white py-3 px-4" title="more projects on GitHub">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -452,7 +473,10 @@
 			<div class="col-md-8">
 				<div class= "resume-wrap ftco-animate align-items-center">
 					<span class="date">Feb 2024-July 2024</span>
-					<h2>SDE - intern</h2>
+					<div class="experience-header-btn">
+						<h2>SDE - intern</h2>
+						<a class="experience-certificate-btn" href="https://drive.google.com/file/d/1_1XF-9174Gsgf4KZjOKy2Lo028T3ERe0/view?usp=sharing" target="_blank" title=" View Internship Certificate"><img class="download-btn" src="./images/download button.jpeg" alt="Internship_Certificate" ></a>
+					</div>
 					<span class="position">Flipkart - Cleartrip <img style="width: 30px;" src="./images/Flipkart.jpeg" alt=""></span>
 					<p class="mt-4">Cleartrip is a flipkart company, which is a booking platform for air(flights), hotel and buses.
 						<ul>
